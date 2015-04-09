@@ -7,6 +7,8 @@
 
   <style type="text/css">
 
+/* MEDIA QUEIRES FOR SMALL DEVICED */
+/*================================ */
 
  @media screen and (max-width: 480px) {
 
@@ -76,15 +78,12 @@
         .featured .black-button, .featured .purple-button, .featured .yellow-button{
         width:100% !important;
     }
-    }
+}
 
-   
 
     @media only screen and (min-device-width: 601px) and (min-width: 601px) {
         .content {width: 600px !important;}
     }
-
-     
 
   	body{
   		font-family: arial;
@@ -125,6 +124,9 @@
   		color:#fff;
   	}
 
+
+/*MAILCHIMP TABS TO CHANGE BACKGROUND CONTAINER COLOURS/*
+/*=====================================================/*
 
   	/**
 * @tab Featured Container
@@ -180,6 +182,9 @@
 	/*@editable*/ width:100%;
 }
 
+/*MAILCHIMP CUSTOM STYLES FOR CTA BUTTONS/*
+/*=====================================================/*
+
 /**
 * @style yellow button
 */
@@ -216,12 +221,7 @@
 	
 }
   </style>
-
 </head>
-
-
-
-
 
 <body yahoo style="margin: 0; padding: 0;">
 	<table border="1" cellpadding="0" cellspacing="0" width="100%" align="center">
@@ -245,10 +245,7 @@
 							</table>
 						</td>
 					</tr>
-
-
-					<!--FEATURED REPEATABLE-->
-					<tr mc:repeatable="siwc_600" mc:variant="Add Featured Section">
+					<tr mc:repeatable="siwc_600" mc:variant="Add Featured Section"><!--FEATURED REPEATABLE-->
 						<td>
 							<table cellpadding="0" cellspacing="0" style="width:100%;" class="featured">
 								<tr>
@@ -272,13 +269,10 @@
 								</tr>
 							</table>
 						</td>
-					</tr>
+					</tr><!--END FEATURED REPEATABLE-->
 
 					
-
-				
-
-					<tr mc:repeatable="siwc_600" mc:variant="Add Story Grid Section">
+					<tr mc:repeatable="siwc_600" mc:variant="Add Story Grid Section"><!--ADD STORY GRID SECTION-->
 						<td>
 							<table  width="100%" align="center" border="1" cellpadding="0" cellspacing="0">
 								<tr class="story-grid-container">
@@ -323,10 +317,10 @@
 								</tr>
 							</table>
 						</td>
-					</tr>
+					</tr><!--END STORY GRID SECTION-->
 									
 
-					<tr mc:repeatable="siwc_600" mc:variant="Add Event Invite Section">
+					<tr mc:repeatable="siwc_600" mc:variant="Add Event Invite Section"><!--ADD INVITE SECTION SECTION-->
 						<td>
 							<table cellapdding="0" cellspacing="0" border="1" width="100%">
 								<tr class="event-invite-container">
@@ -357,47 +351,44 @@
 					</tr>
 							</table>
 						</td>
-					</tr>
+					</tr><!--END STORY GRID SECTION-->
 
-					<tr>
+					<tr><!--FOOTER SECTION-->
 						<td>
 							<table id="footer" cellspacing="0" cellpadding="0" width="100%">
-																<tr class="footer-container">
-						<td align="center" style="padding:30px 15px 30px 30px;" class="col padding-right-30 no-padding-bottom">
-							<img src ="http://www.itavenues.co.uk/emailers/ITA-LOGO.jpg" alt= "ITA Logo" width="149" />
-						</td>
+								<tr class="footer-container">
+									<td align="center" style="padding:30px 15px 30px 30px;" class="col padding-right-30 no-padding-bottom">
+											<img src ="http://www.itavenues.co.uk/emailers/ITA-LOGO.jpg" alt= "ITA Logo" width="149" />
+									</td>
 
-						<td class="col no-padding-top padding-left-30 no-padding-bottom" style="padding:30px 30px 30px 15px;" align="center">
-							<table>
-								<tr>
-									<td align="center" class="col" style="padding:30px 0;">
-							<a href="#"><img src ="http://www.itavenues.co.uk/emailers/facebook.png" width="48" alt="Like ITA  on Facebook" /></a>
-						</td>
-						<td width="10" style="line-height:0; font-size:0;">
-							&nbspc;
-						</td>
-						<td>
-							<a href="#"><img src ="http://www.itavenues.co.uk/emailers/twitter.png" width="48" alt="Follow ITA  on Twitter" /></a>
-						</td>
-						<td width="10" style="line-height:0; font-size:0;">
-							&nbspc;
-						</td>
-						<td>
-							<a href="#"><img src ="http://www.itavenues.co.uk/emailers/google.png" width="48" alt="Follow ITA on Google" /></a>
-						</td>
-								</tr>
-							</table>
-						</td>		
-					</tr>		
-		<!-- 		</table>
-			</td>
-		</tr> -->
+									<td class="col no-padding-top padding-left-30 no-padding-bottom" style="padding:30px 30px 30px 15px;" align="center">
+										<table>
+											<tr>
+												<td align="center" class="col" style="padding:30px 0;">
+													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/facebook.png" width="48" alt="Like ITA  on Facebook" /></a>
+												</td>
+												<td width="10" style="line-height:0; font-size:0;">
+													&nbspc;
+												</td>
+												<td>
+													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/twitter.png" width="48" alt="Follow ITA  on Twitter" /></a>
+												</td>
+												<td width="10" style="line-height:0; font-size:0;">
+													&nbspc;
+												</td>
+												<td>
+													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/google.png" width="48" alt="Follow ITA on Google" /></a>
+												</td>
+											</tr>
+										</table>
+									</td>		
+								</tr>		
 						</table>
 					</td>
-				</tr>
+				</tr><!--END FOOTER SECTION-->
 
 
-				<tr>
+				<tr><!--FOOTER LINKS-->
 					<td>
 						<table class="footer-links" style="font-size:12px;" cellpadding="10" cellspacing="0" width="100%" bgcolor="#231f20">
 							<tr>
@@ -416,7 +407,7 @@
 							</tr>
 						</table>
 					</td>
-				</tr>
+				</tr><!--END FOOTER LINKS-->
 			</table>
       <!--[if (gte mso 9)|(IE)]>
           </td>
