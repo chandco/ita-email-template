@@ -72,12 +72,6 @@
    	 	height: 100%;
   	}
 
-
-        /*.story-grid-left, .story-grid-right{
-            display:block;
-            width:100%;
-        }
-*/
         .empty-cell{
             display:none;
         } 
@@ -162,9 +156,6 @@
   	.footer-links a:visited {
   		color: #ffd300 !important;
   	}
-
-  	/*MAILCHIMP - MAKE IMAGES STAY IN VIEW*/
-
   </style>
 </head>
 
@@ -187,7 +178,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="center" style="font-weight:bold; color:#ffffff; font-family:arial black; font-size:20px;" class="col" mc:edit="header_area">Add Editable content here
+									<td style="padding-bottom:15px; font-weight:bold; color:#ffffff; font-family:arial black; font-size:20px;" align="center" class="col" mc:edit="header_area">Add Editable content here
 									</td>
 								</tr>
 							</table>
@@ -195,7 +186,7 @@
 					</tr><!--END HEADER SECTION -->
 					
 					<tr bgcolor="#fed206" mc:repeatable="siwc_600" mc:variant="Add Featured Section (Yellow)"><!--FEATURED YELLOW REPEATABLE-->
-						<td>
+						<td style="padding:15px 0 15px 0;">
 							<table cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
 									<td>
@@ -203,12 +194,12 @@
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 30px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
+									<td style="padding: 20px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
 										<strong>Place title here</strong>
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 20px 30px 30px 30px;" mc:edit="featured_content">
+									<td style="padding: 20px 30px 0 30px;" mc:edit="featured_content">
 										Enter content text here
 									</td>
 								</tr>
@@ -218,7 +209,7 @@
 
 
 					<tr bgcolor="white" mc:repeatable="siwc_600" mc:variant="Add Featured Section (White)"><!--FEATURED WHITE REPEATABLE-->
-						<td>
+						<td style="padding:15px 0 15px 0;">
 							<table cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
 									<td>
@@ -226,12 +217,12 @@
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 30px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
+									<td style="padding: 20px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
 										<strong>Place title here</strong>
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 20px 30px 30px 30px;" mc:edit="featured_content">
+									<td style="padding: 20px 30px 0 30px;" mc:edit="featured_content">
 										Enter content text here
 									</td>
 								</tr>
@@ -241,7 +232,7 @@
 
 
 					<tr mc:repeatable="siwc_600" mc:variant="Add Read More Button (Yellow Border)"><!--ADD READ MORE BUTTON YELLOW BORDER AND YELLOW TEXT-->
-						<td style="padding:0 30px 30px 30px; background:#ffffff;">
+						<td style="padding:15px 30px 15px 30px; background:#ffffff;">
 							<table width="100%" cellpadding="0" cellspacing="0">
 								<tr>
 									<td align="center" style="padding:15px; background:#ffffff; border:solid 2px #fed206; color:#fed206;" class="read-more-yellow" mc:edit="read-more-featured">
@@ -253,7 +244,7 @@
 					</tr><!--END YELLOW READ MORE BUTTON-->
 
 					<tr mc:repeatable="siwc_600" mc:variant="Add Read More Button (Black Border)"><!--ADD READ MORE BUTTON BLACK BORDER AND BLACK TEXT-->
-						<td style="padding:0 30px 30px 30px; background:#ffffff;">
+						<td style="padding:15px 30px 15px 30px; background:#ffffff;">
 							<table width="100%" cellpadding="0" cellspacing="0">
 								<tr>
 									<td align="center" style="padding:15px; background:#ffffff; border:solid 2px #000000; color:#000000;" class="read-more-black" mc:edit="read-more-featured">
@@ -270,7 +261,7 @@
 							<table  width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
 								<tr>
 									
-									<td style="padding:30px 15px 15px 30px;" width="50%" class="col padding-right-30" valign="top">
+									<td style="padding:15px 15px 15px 30px;" width="50%" class="col padding-right-30" valign="top">
 										<table width="100%" cellspacing="0" cellpadding="0">
 											<tr>
 												<td class="padding-right-30 image-wrapper">
@@ -278,7 +269,7 @@
 												</td>
 											</tr>
 											<tr>
-												<td class="padding-top-30" style="padding:15px 0 0 0; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
+												<td style="padding:20px 0 0 0; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
 													<font><strong>Place title here</strong></font>
 												</td>
 											</tr>
@@ -302,15 +293,15 @@
 										</table>
 									</td>
 
-									<td style="padding:30px 30px 30px 15px;" class="col padding-left-30 no-padding-top" width="50%" valign="top">
+									<td style="padding:15px 30px 15px 15px;" class="col padding-left-30" width="50%" valign="top">
 										<table  width="100%" cellspacing="0" cellpadding="0" border="0">
 											<tr>
-												<td class="padding-left-30 no-padding-top image-wrapper">
+												<td class="padding-left-30 image-wrapper">
 													<img src="images/255-image.jpg" mc:edit="story_grid_right_img" alt="some pic" />
 												</td>
 											</tr>
 											<tr>
-												<td style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
+												<td style="padding-top:20px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
 													<font><strong>Place title here</strong></font>
 												</td>
 											</tr>
@@ -343,7 +334,7 @@
 							<table  width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
 								<tr>
 									
-									<td style="padding:30px 15px 30px 30px;" width="50%" class="col padding-right-30" valign="top">
+									<td style="padding:15px 15px 15px 30px;" width="50%" class="col padding-right-30" valign="top">
 										<table width="100%" cellspacing="0" cellpadding="0">
 											<tr>
 												<td class="padding-right-30 image-wrapper">
@@ -351,7 +342,7 @@
 												</td>
 											</tr>
 											<tr>
-												<td class="padding-top-30" style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
+												<td style="padding-top:20px; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
 													<font><strong>Place title here</strong></font>
 												</td>
 											</tr>
@@ -375,15 +366,15 @@
 										</table>
 									</td>
 
-									<td style="padding:30px 30px 30px 15px;" class="col padding-left-30 no-padding-top" width="50%" valign="top">
+									<td style="padding:15px 30px 15px 15px;" class="col padding-left-30" width="50%" valign="top">
 										<table  width="100%" cellspacing="0" cellpadding="0" border="0">
 											<tr>
-												<td class="padding-left-30 no-padding-top image-wrapper">
+												<td class="padding-left-30 image-wrapper">
 													<img src="images/255-image.jpg" mc:edit="story_grid_right_img" alt="some pic" />
 												</td>
 											</tr>
 											<tr>
-												<td class="no-padding-top" style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
+												<td style="padding-top:20px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
 													<font><strong>Place title here</strong></font>
 												</td>
 											</tr>
@@ -416,15 +407,15 @@
 						<td>
 							<table cellapdding="0" cellspacing="0" border="0" width="100%">
 								<tr>
-									<td width="50%" class="col padding-right-30 padding-bottom-mobile-20" style="padding:30px 15px 30px 30px;" mc:edit="event_invite_headline">
+									<td width="50%" class="col padding-right-30" style="padding:15px 15px 15px 30px;" mc:edit="event_invite_headline">
 									 Add Editable text here
 									</td>
-									<td class="event-invite-btn no-padding-top no-padding-bottom padding-left-30" align="center" style="padding:30px 30px 30px 15px;" mc:edit="event_invite_btn">
+									<td class="event-invite-btn padding-left-30" align="center" style="padding:15px 30px 15px 15px;" mc:edit="event_invite_btn">
 									Call To Action Button
 									</td>
 								</tr>
 								<tr>
-									<td class="col padding-top-mobile-20 padding-bottom-10 padding-right-30" style="padding:0 15px 30px 30px;" valign="top" mc:edit="event_invite_address">
+									<td class="col padding-right-30" style="padding:15px 15px 15px 30px;" valign="top" mc:edit="event_invite_address">
 									Add Editable text here
 									<p>&nbsp;</p>
 									<p><strong>Address line 1s</strong></p>
@@ -433,7 +424,7 @@
 									<p><strong>Address line 4</strong></p>
 									</td>
 
-									<td style="padding: 0 30px 30px 15px;" class="col padding-left-30" valign="top">
+									<td style="padding: 15px 30px 15px 15px;" class="col padding-left-30" valign="top">
 										<table cellspacing="0" cellpadding="0" width="100%">
 											<tr>
 												<td class="image-wrapper">
@@ -444,7 +435,7 @@
 									</td>					
 								</tr>
 								<tr>
-									<td style="padding:0 30px 30px 30px;" colspan="2" mc:edit="event_invite_content" class="col no-padding-top">
+									<td style="padding:15px 30px 15px 30px;" colspan="2" mc:edit="event_invite_content" class="col">
 										Add Editable text 
 									</td>
 								</tr>
@@ -457,15 +448,15 @@
 						<td>
 							<table cellapdding="0" cellspacing="0" border="0" width="100%">
 								<tr>
-									<td width="50%" class="col padding-right-30 padding-bottom-mobile-20" style="padding:30px 15px 30px 30px;" mc:edit="event_invite_headline">
+									<td width="50%" class="col padding-right-30" style="padding:15px 15px 15px 30px;" mc:edit="event_invite_headline">
 										 Add Editable text here
 									</td>
-									<td class="event-invite-btn no-padding-top no-padding-bottom padding-left-30" align="center" style="padding:30px 30px 30px 15px;" mc:edit="event_invite_btn">
+									<td class="event-invite-btn padding-left-30" align="center" style="padding:15px 30px 15px 15px;" mc:edit="event_invite_btn">
 											Call To Action Button
 									</td>
 								</tr>
 								<tr>
-									<td class="col padding-top-mobile-20 padding-bottom-10 padding-right-30" style="padding:0 15px 30px 30px;" valign="top" mc:edit="event_invite_address">
+									<td class="col padding-right-30" style="padding:15px 15px 15px 30px;" valign="top" mc:edit="event_invite_address">
 										Add Editable text here
 										<p>&nbsp;</p>
 										<p><strong>Address line 1s</strong></p>
@@ -474,7 +465,7 @@
 										<p><strong>Address line 4</strong></p>
 									</td>
 
-									<td style="padding: 0 30px 30px 15px;" class="col padding-left-30" valign="top">
+									<td style="padding: 15px 30px 15px 15px;" class="col padding-left-30" valign="top">
 										<table cellspacing="0" cellpadding="0" width="100%">
 											<tr>
 												<td class="image-wrapper">
@@ -485,7 +476,7 @@
 									</td>				
 								</tr>
 								<tr>
-									<td style="padding:0 30px 30px 30px;" colspan="2" mc:edit="event_invite_content" class="col no-padding-top">
+									<td style="padding:15px 30px 15px 30px;" colspan="2" mc:edit="event_invite_content" class="col">
 										Add Editable text 
 									</td>
 								</tr>
@@ -494,15 +485,15 @@
 					</tr><!--END STORY WHITE INVITE SECTION-->
 
 					<tr mc:repeatable="siwc_600" mc:variant="Add Title And Text (Yellow)">
-						<td>
+						<td style="15px 30px;">
 							<table cellpadding="0" cellspacing="0" width="100%">
 								<tr bgcolor="#fed206">
-									<td mc:edit="add-title" style="padding:30px 30px 15px 30px; font-family:arial black;" class="padding-top-mobile-20">
+									<td mc:edit="add-title" style="padding:15px 30px 15px 30px; font-family:arial black;">
 									TITLE
 									</td>
 								</tr>
 								<tr bgcolor="#fed206">
-									<td mc:edit="add-text" style="padding:0 30px 30px 30px;">
+									<td mc:edit="add-text" style="padding:0 30px 15px 30px;">
 									some text
 									</td>
 								</tr>
@@ -514,12 +505,12 @@
 						<td>
 							<table cellpadding="0" cellspacing="0" width="100%">
 								<tr bgcolor="ffffff">
-									<td mc:edit="add-title-white" style="padding:30px 30px 15px 30px; font-family:arial black;" class="padding-top-mobile-20">
+									<td mc:edit="add-title-white" style="padding:15px 30px 15px 30px; font-family:arial black;">
 									TITLE
 									</td>
 								</tr>
 								<tr bgcolor="#ffffff">
-									<td mc:edit="add-text-white" style="padding:0 30px 30px 30px;">
+									<td mc:edit="add-text-white" style="padding:0 30px 15px 30px;">
 									some text
 									</td>
 								</tr>
