@@ -12,11 +12,6 @@
 
  @media screen and (max-width: 480px) {
 
-        .logo{
-            text-align:center;
-            padding-bottom:0;
-        }
-
         .col{
             display:block; 
             width:inherit;         
@@ -62,11 +57,11 @@
             border-right:none !important;
         }
 
-        .story-grid-left, .story-grid-right{
+        /*.story-grid-left, .story-grid-right{
             display:block;
             width:100%;
         }
-
+*/
         .empty-cell{
             display:none;
         } 
@@ -78,6 +73,15 @@
         .featured .black-button, .featured .purple-button, .featured .yellow-button{
         width:100% !important;
     }
+
+    .mobile-btn{
+    	width:100%;
+    	text-align:center;
+    }
+
+    .top-border-mobile {
+  		border-top:1px solid #868484 !important;
+  	}
 }
 
 
@@ -101,10 +105,13 @@
   		width:100%;
   	}
 
+  	 .logo{
+        padding-bottom:0;
+    }
+
   	img{
   		max-width:100%;
   		height:auto;
-  		width:100%;
   		}
 
   	.title span{
@@ -115,116 +122,60 @@
   		width:215px;
   	}
 
-  	#header img, #footer img{
-  		width:inherit;
-  	}
 
   	.button-variants a{
   		display:block;
   		color:#fff;
   	}
 
+  	.read-more-black a{
+  		color:#000000 !important;
+  		display:block;
+  	}
 
-/*MAILCHIMP TABS TO CHANGE BACKGROUND CONTAINER COLOURS/*
-/*=====================================================/*
+  	.read-more-yellow a{
+  		color:#fed206 !important;
+  		display:block;
+  	}
 
-  	/**
-* @tab Featured Container
-* @section heading 1
-* @tip Set the styling for all first-level headings in your emails.
-*/
-.featured{
-    /*@editable*/ background-color:#ffd200 !important;
-}
+  	.read-more-white a{
+  		color:#ffffff !important;
+  		display:block;
+  	}
 
-  	/**
-* @tab Story Grid Container
-* @section heading 1
-* @tip Set the styling for all first-level headings in your emails.
-*/
-.story-grid-container{
-    /*@editable*/ background-color:#98165d !important;
-}
+  	.image-wrapper{
+  		position: relative;
+   		padding-bottom: 56.25%; /* 16:9 ratio */
+    	height: 0;
+    	overflow: hidden;
+  	}
 
-  	/**
-* @tab Event Grid Container
-* @section heading 1
-* @tip Set the styling for all first-level headings in your emails.
-*/
-.event-invite-container{
-    /*@editable*/ background-color:#ffd200 !important;
-}
+  	.image-wrapper img{
+  		position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+   	 	height: 100%;
+  	}
 
-  	/**
-* @tab Footer Container
-* @section heading 1
-* @tip Set the styling for all first-level headings in your emails.
-*/
-.footer-container{
-    /*@editable*/ background-color:#000000 !important;
-}
+  	.footer-links a:active, 
+  	.footer-links a:link, 
+  	.footer-links a:hover, 
+  	.footer-links a:visited {
+  		color: #ffd300 !important;
+  	}
 
+  	/*MAILCHIMP - MAKE IMAGES STAY IN VIEW*/
 
-/**
-* @style Black button
-*/
-.black-button {
-	/*@editable*/ color:#FFFFFF;
-	/*@editable*/ background-color:#343333;
-	/*@editable*/ padding:10px 0;
-	/*@editable*/ line-height: 100%;
-	/*@editable*/ font-family: Arial;
-	/*@editable*/ border-radius:5px;
-	/*@editable*/ text-align:center;
-	/*@editable*/ font-size:18px;
-	/*@editable*/ display:inline-block;
-	/*@editable*/ border-bottom:solid 3px rgb(36, 34, 35);
-	/*@editable*/ width:100%;
-}
+  	.edit-image{
+  		position:static !important;
+  	}
 
-/*MAILCHIMP CUSTOM STYLES FOR CTA BUTTONS/*
-/*=====================================================/*
-
-/**
-* @style yellow button
-*/
-.yellow-button {
-	/*@editable*/ color:#000000;
-	/*@editable*/ background-color:rgb(249, 210, 9);
-	/*@editable*/ padding:10px 0;
-	/*@editable*/ line-height: 100%;
-	/*@editable*/ font-family: Arial;
-	/*@editable*/ border-radius:5px;
-	/*@editable*/ text-align:center;
-	/*@editable*/ font-size:18px;
-	/*@editable*/ display:inline-block;
-	/*@editable*/ border-bottom:solid 3px rgb(176, 142, 7);
-	/*@editable*/ width:100%;
-}
-
-
-/**
-* @style purple button
-*/
-.purple-button {
-	/*@editable*/ color:#FFFFFF;
-	/*@editable*/ background-color:rgb(82, 38, 82);
-	/*@editable*/ padding:10px 0;
-	/*@editable*/ line-height: 100%;
-	/*@editable*/ font-family: Arial;
-	/*@editable*/ border-radius:5px;
-	/*@editable*/ text-align:center;
-	/*@editable*/ font-size:18px;
-	/*@editable*/ display:inline-block;
-	/*@editable*/ border-bottom:solid 3px rgb(48, 27, 38);
-	/*@editable*/ width:100%;
-	
-}
   </style>
 </head>
 
 <body yahoo style="margin: 0; padding: 0;">
-	<table border="1" cellpadding="0" cellspacing="0" width="100%" align="center">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#f1f1f1">
 		<tr align="center">
 			<td align="center">
       <!--[if (gte mso 9)|(IE)]>
@@ -232,29 +183,33 @@
         <tr>
           <td width="600">
       <![endif]-->
-				<table align="center" border="1" cellpadding="0" cellspacing="0" class="content">
-					<tr bgcolor="#000000">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" class="content">
+					<tr bgcolor="#fed206"><!--HEADER SECTION -->
 						<td>
 							<table id="header" align="center" cellpadding="30" cellspacing="0" width="100%">
 								<tr>
-									<td class="col logo">
-										<img src="http://www.itavenues.co.uk/emailers/ita-header-logo.jpg" alt="ITA Logo" width="161" />
+									<td align="center" class="col logo">
+										<img src="http://www.itavenues.co.uk/emailers/ita-logo.png" alt="ITA Logo" width="83" />
 									</td>
-									<td width="219" valign="top" style="font-weight:bold; color:#ffffff;" align="left" class="col" mc:edit="header_area">Add Editable content here</td>
+								</tr>
+								<tr>
+									<td align="center" style="font-weight:bold; color:#ffffff; font-family:arial black; font-size:20px;" class="col" mc:edit="header_area">Add Editable content here
+									</td>
 								</tr>
 							</table>
 						</td>
-					</tr>
-					<tr mc:repeatable="siwc_600" mc:variant="Add Featured Section"><!--FEATURED REPEATABLE-->
+					</tr><!--END HEADER SECTION -->
+					
+					<tr bgcolor="#fed206" mc:repeatable="siwc_600" mc:variant="Add Featured Section (Yellow)"><!--FEATURED YELLOW REPEATABLE-->
 						<td>
-							<table cellpadding="0" cellspacing="0" style="width:100%;" class="featured">
+							<table cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
-									<td style="padding: 30px 30px 0 30px;">
+									<td>
 										<img src="images/540-px-image.jpg" mc:edit="featured_image" alt="SOME IMAGE TEXT" />
 									</td>
 								</tr>
 								<tr>
-									<td style="padding: 30px 30px 0 30px; font-size:18px;" mc:edit="featured_headline">
+									<td style="padding: 30px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
 										<strong>Place title here</strong>
 									</td>
 								</tr>
@@ -263,146 +218,352 @@
 										Enter content text here
 									</td>
 								</tr>
+							</table>
+						</td>
+					</tr><!--END FEATURED YELLOW REPEATABLE-->
+
+
+					<tr bgcolor="white" mc:repeatable="siwc_600" mc:variant="Add Featured Section (White)"><!--FEATURED WHITE REPEATABLE-->
+						<td>
+							<table cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
-									<td align="center">
+									<td>
+										<img src="images/540-px-image.jpg" mc:edit="featured_image" alt="SOME IMAGE TEXT" />
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 30px 30px 0 30px; font-size:18px; font-family:arial black;" mc:edit="featured_headline">
+										<strong>Place title here</strong>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding: 20px 30px 30px 30px;" mc:edit="featured_content">
+										Enter content text here
 									</td>
 								</tr>
 							</table>
 						</td>
-					</tr><!--END FEATURED REPEATABLE-->
+					</tr><!--END FEATURED WHITE REPEATABLE-->
+
+
+					<tr mc:repeatable="siwc_600" mc:variant="Add Read More Button (Yellow Border)"><!--ADD READ MORE BUTTON YELLOW BORDER AND YELLOW TEXT-->
+						<td style="padding:0 30px 30px 30px; background:#ffffff;">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" style="padding:15px; background:#ffffff; border:solid 2px #fed206; color:#fed206;" class="read-more-yellow" mc:edit="read-more-featured">
+									Read More...
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr><!--END YELLOW READ MORE BUTTON-->
+
+					<tr mc:repeatable="siwc_600" mc:variant="Add Read More Button (Black Border)"><!--ADD READ MORE BUTTON BLACK BORDER AND BLACK TEXT-->
+						<td style="padding:0 30px 30px 30px; background:#ffffff;">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" style="padding:15px; background:#ffffff; border:solid 2px #000000; color:#000000;" class="read-more-black" mc:edit="read-more-featured">
+									Read More...
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr><!--END BLACK READ MORE BUTTON-->
 
 					
-					<tr mc:repeatable="siwc_600" mc:variant="Add Story Grid Section"><!--ADD STORY GRID SECTION-->
+					<tr bgcolor="#FFFFFF" mc:repeatable="siwc_600" mc:variant="Add Story Grid Section (White)"><!--ADD STORY GRID WHITE SECTION-->
 						<td>
-							<table  width="100%" align="center" border="1" cellpadding="0" cellspacing="0">
-								<tr class="story-grid-container">
+							<table  width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+								<tr>
 									
-									<td width="50%" class="story-grid-left col" valign="top">
+									<td style="padding:30px 15px 15px 30px;" width="50%" class="col padding-right-30" valign="top">
 										<table width="100%" cellspacing="0" cellpadding="0">
 											<tr>
-												<td class="padding-right-30" style="padding:30px 15px 30px 30px;" ><img src="images/255-image.jpg" mc:edit="story_grid_left_img" alt="some pic" /></td>
-											</tr>
-											<tr>
-												<td style="padding:0 30px 0 30px; font-size:18px;" mc:edit="story-grid-left-title">
-													<font color="#ffffff"><strong>Place title here</strong></font>
+												<td class="padding-right-30 image-wrapper">
+													<img src="images/255-image.jpg" mc:edit="story_grid_left_img" alt="some pic" />
 												</td>
 											</tr>
 											<tr>
-												<td class="padding-right-30" style="padding:10px 15px 30px 30px;" mc:edit="story_grid_content_left">
-													<font color="#ffffff">Enter content text here</font>
+												<td style="padding:15px 0 0 0; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
+													<font><strong>Place title here</strong></font>
+												</td>
+											</tr>
+											<tr>
+												<td class="padding-right-30" style="padding:15px 0 0 0;" mc:edit="story_grid_content_left">
+													<font>Enter content text here</font>
+												</td>
+											</tr>
+
+											<tr>
+												<td style="padding-top:30px;">
+													<table cellspacing="0" cellpadding="0" width="50%" class="mobile-btn story-grid-yellow-btn">
+														<tr>
+															<td class="read-more-white" style="background:#fed206; color:#ffffff; padding:10px;" mc:edit="read-more-left">
+																READ MORE
+															</td>
+														</tr>
+													</table>
 												</td>
 											</tr>
 										</table>
 									</td>
 
-									<td class="story-grid-right col" width="50%" valign="top">
+									<td style="padding:30px 30px 30px 15px;" class="col padding-left-30" width="50%" valign="top">
 										<table  width="100%" cellspacing="0" cellpadding="0" border="0">
 											<tr>
-												<td class="padding-left-30 no-padding-top" style="padding:30px 30px 30px 15px;">
+												<td class="padding-left-30 no-padding-top image-wrapper">
 													<img src="images/255-image.jpg" mc:edit="story_grid_right_img" alt="some pic" />
 												</td>
 											</tr>
 											<tr>
-												<td class="padding-left-30" style="padding:0 30px 0 15px; font-size:18px;" mc:edit="story-grid-right-title">
-													<font color="#ffffff"><strong>Place title here</strong></font>
+												<td style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
+													<font><strong>Place title here</strong></font>
 												</td>
 											</tr>
 											<tr>
-												<td class="padding-left-30" style="padding:10px 30px 30px 15px;" mc:edit="story_grid_content_right">
-													<font color="#ffffff">Enter content text here</font>
+												<td style="padding-top:15px;" mc:edit="story_grid_content_right">
+													<font>Enter content text here</font>
 												</td>
 											</tr>
+
+											<tr>
+												<td style="padding-top: 30px;">
+													<table cellspacing="0" cellpadding="0" width="50%" class="mobile-btn story-grid-yellow-btn">
+														<tr>
+															<td class="read-more-white" style="background:#fed206; color:#ffffff; padding:10px;" mc:edit="read-more-right">
+																READ MORE
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+
 										</table>
 									</td>
 								</tr>
 							</table>
 						</td>
-					</tr><!--END STORY GRID SECTION-->
+					</tr><!--END STORY GRID WHITE SECTION-->
+					<tr bgcolor="#fed206" mc:repeatable="siwc_600" mc:variant="Add Story Grid Section (Yellow)"><!--ADD STORY GRID YELLOW SECTION-->
+						<td>
+							<table  width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+								<tr>
 									
-
-					<tr mc:repeatable="siwc_600" mc:variant="Add Event Invite Section"><!--ADD INVITE SECTION SECTION-->
-						<td>
-							<table cellapdding="0" cellspacing="0" border="1" width="100%">
-								<tr class="event-invite-container">
-						<td width="50%" class="col padding-right-30 padding-bottom-mobile-20" style="padding:30px 15px 30px 30px;" mc:edit="event_invite_headline">
-							 Add Editable text here
-						</td>
-						<td class="event-invite-btn no-padding-top no-padding-bottom padding-left-30" align="center" style="padding:30px 30px 30px 15px;" mc:edit="event_invite_btn">
-								Call To Action Button
-						</td>
-					</tr>
-					<tr class="event-invite-container">
-						<td class="col padding-top-mobile-20 padding-bottom-10 padding-right-30" style="padding:0 15px 30px 30px;" valign="top" mc:edit="event_invite_address">
-							Add Editable text here
-							<p>&nbsp;</p>
-							<p><strong>Address line 1s</strong></p>
-							<p><strong>Address line 2</strong></p>
-							<p><strong>Address line 3</strong></p>
-							<p><strong>Address line 4</strong></p>
-						</td>
-						<td class="col padding-left-30 no-padding-top padding-bottom-mobile-20" valign="top" style="padding:0 30px 30px 15px;">
-							<img src="images/255-image.jpg" mc:edit="event-invite-image" alt="some pic" />
-						</td>
-					</tr>
-					<tr class="event-invite-container">
-						<td style="padding:0 30px 30px 30px;" colspan="2" mc:edit="event_invite_content" class="col no-padding-top">
-							Add Editable text 
-						</td>
-					</tr>
-							</table>
-						</td>
-					</tr><!--END STORY GRID SECTION-->
-
-					<tr><!--FOOTER SECTION-->
-						<td>
-							<table id="footer" cellspacing="0" cellpadding="0" width="100%">
-								<tr class="footer-container">
-									<td align="center" style="padding:30px 15px 30px 30px;" class="col padding-right-30 no-padding-bottom">
-											<img src ="http://www.itavenues.co.uk/emailers/ITA-LOGO.jpg" alt= "ITA Logo" width="149" />
-									</td>
-
-									<td class="col no-padding-top padding-left-30 no-padding-bottom" style="padding:30px 30px 30px 15px;" align="center">
-										<table>
+									<td style="padding:30px 15px 30px 30px;" width="50%" class="col padding-right-30" valign="top">
+										<table width="100%" cellspacing="0" cellpadding="0">
 											<tr>
-												<td align="center" class="col" style="padding:30px 0;">
-													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/facebook.png" width="48" alt="Like ITA  on Facebook" /></a>
+												<td class="padding-right-30 image-wrapper">
+													<img src="images/255-image.jpg" mc:edit="story_grid_left_img" alt="some pic" />
 												</td>
-												<td width="10" style="line-height:0; font-size:0;">
-													&nbspc;
+											</tr>
+											<tr>
+												<td style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-left-title">
+													<font><strong>Place title here</strong></font>
 												</td>
-												<td>
-													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/twitter.png" width="48" alt="Follow ITA  on Twitter" /></a>
+											</tr>
+											<tr>
+												<td class="padding-right-30" style="padding-top:15px;" mc:edit="story_grid_content_left">
+													<font>Enter content text here</font>
 												</td>
-												<td width="10" style="line-height:0; font-size:0;">
-													&nbspc;
-												</td>
-												<td>
-													<a href="#"><img src ="http://www.itavenues.co.uk/emailers/google.png" width="48" alt="Follow ITA on Google" /></a>
+											</tr>
+
+											<tr>
+												<td style="padding-top:30px;">
+													<table cellspacing="0" cellpadding="0" width="50%" class="mobile-btn">
+														<tr>
+															<td class="read-more-yellow" style="background:#000000; color:#fed206; padding:10px;" mc:edit="read-more-left">
+																READ MORE
+															</td>
+														</tr>
+													</table>
 												</td>
 											</tr>
 										</table>
+									</td>
+
+									<td style="padding:30px 30px 30px 15px;" class="col padding-left-30" width="50%" valign="top">
+										<table  width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td class="padding-left-30 no-padding-top image-wrapper">
+													<img src="images/255-image.jpg" mc:edit="story_grid_right_img" alt="some pic" />
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-top:15px; font-size:18px; font-family:arial black;" mc:edit="story-grid-right-title">
+													<font><strong>Place title here</strong></font>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding-top:15px;" mc:edit="story_grid_content_right">
+													<font>Enter content text here</font>
+												</td>
+											</tr>
+
+											<tr>
+												<td style="padding-top:30px;">
+													<table cellspacing="0" cellpadding="0" width="50%" class="mobile-btn read-more-yellow">
+														<tr>
+															<td class="read-more-yellow" style="background:#000000; color:#fed206; padding:10px;" mc:edit="read-more-right">
+																READ MORE
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr><!--END STORY GRID YELLOW SECTION-->
+
+					<tr bgcolor="#fed206" mc:repeatable="siwc_600" mc:variant="Add Event Invite Section (Yellow)"><!--ADD INVITE YELLOW SECTION-->
+						<td>
+							<table cellapdding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td width="50%" class="col padding-right-30 padding-bottom-mobile-20" style="padding:30px 15px 30px 30px;" mc:edit="event_invite_headline">
+									 Add Editable text here
+									</td>
+									<td class="event-invite-btn no-padding-top no-padding-bottom padding-left-30" align="center" style="padding:30px 30px 30px 15px;" mc:edit="event_invite_btn">
+									Call To Action Button
+									</td>
+								</tr>
+								<tr>
+									<td class="col padding-top-mobile-20 padding-bottom-10 padding-right-30" style="padding:0 15px 30px 30px;" valign="top" mc:edit="event_invite_address">
+									Add Editable text here
+									<p>&nbsp;</p>
+									<p><strong>Address line 1s</strong></p>
+									<p><strong>Address line 2</strong></p>
+									<p><strong>Address line 3</strong></p>
+									<p><strong>Address line 4</strong></p>
+									</td>
+
+									<td style="padding: 0 30px 30px 15px;" class="col padding-left-30" valign="top">
+										<table cellspacing="0" cellpadding="0" width="100%">
+											<tr>
+												<td class="image-wrapper">
+												<img src="images/255-image.jpg" mc:edit="event-invite-image" alt="some pic" />
+												</td>
+											</tr>
+										</table>
+									</td>					
+								</tr>
+								<tr>
+									<td style="padding:0 30px 30px 30px;" colspan="2" mc:edit="event_invite_content" class="col no-padding-top">
+										Add Editable text 
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr><!--END STORY YELLOW INVITE SECTION-->
+
+
+					<tr bgcolor="#FFFFFF" mc:repeatable="siwc_600" mc:variant="Add Event Invite Section (White)"><!--ADD INVITE WHITE SECTION-->
+						<td>
+							<table cellapdding="0" cellspacing="0" border="0" width="100%">
+								<tr>
+									<td width="50%" class="col padding-right-30 padding-bottom-mobile-20" style="padding:30px 15px 30px 30px;" mc:edit="event_invite_headline">
+										 Add Editable text here
+									</td>
+									<td class="event-invite-btn no-padding-top no-padding-bottom padding-left-30" align="center" style="padding:30px 30px 30px 15px;" mc:edit="event_invite_btn">
+											Call To Action Button
+									</td>
+								</tr>
+								<tr>
+									<td class="col padding-top-mobile-20 padding-bottom-10 padding-right-30" style="padding:0 15px 30px 30px;" valign="top" mc:edit="event_invite_address">
+										Add Editable text here
+										<p>&nbsp;</p>
+										<p><strong>Address line 1s</strong></p>
+										<p><strong>Address line 2</strong></p>
+										<p><strong>Address line 3</strong></p>
+										<p><strong>Address line 4</strong></p>
+									</td>
+
+									<td style="padding: 0 30px 30px 15px;" class="col padding-left-30" valign="top">
+										<table cellspacing="0" cellpadding="0" width="100%">
+											<tr>
+												<td class="image-wrapper">
+												<img src="images/255-image.jpg" mc:edit="event-invite-image" alt="some pic" />
+												</td>
+											</tr>
+										</table>
+									</td>				
+								</tr>
+								<tr>
+									<td style="padding:0 30px 30px 30px;" colspan="2" mc:edit="event_invite_content" class="col no-padding-top">
+										Add Editable text 
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr><!--END STORY WHITE INVITE SECTION-->
+
+					<tr mc:repeatable="siwc_600" mc:variant="Add Title And Text (Yellow)">
+						<td>
+							<table cellpadding="0" cellspacing="0" width="100%">
+								<tr bgcolor="#fed206">
+									<td mc:edit="add-title" style="padding:30px 30px 15px 30px; font-family:arial black;" class="padding-top-mobile-20">
+									TITLE
+									</td>
+								</tr>
+								<tr bgcolor="#fed206">
+									<td mc:edit="add-text" style="padding:0 30px 30px 30px;">
+									some text
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr mc:repeatable="siwc_600" mc:variant="Add Title And Text (White)">
+						<td>
+							<table cellpadding="0" cellspacing="0" width="100%">
+								<tr bgcolor="ffffff">
+									<td mc:edit="add-title-white" style="padding:30px 30px 15px 30px; font-family:arial black;" class="padding-top-mobile-20">
+									TITLE
+									</td>
+								</tr>
+								<tr bgcolor="#ffffff">
+									<td mc:edit="add-text-white" style="padding:0 30px 30px 30px;">
+									some text
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr><!--FOOTER SECTION-->
+						<td>
+							<table id="footer" cellspacing="0" cellpadding="0" width="100%" bgcolor="#0f1110">
+								<tr>
+									<td align="center" style="padding:0 15px 0 30px;" class="col padding-right-30 no-padding-bottom padding-top-30">
+											<img src ="http://www.itavenues.co.uk/emailers/offer.png" width="254" alt= "ITA Offer" />
+									</td>
+
+									<td class="col padding-left-30 padding-top-30" style="padding:30px 30px 30px 15px;" align="center">
+											<img src ="http://www.itavenues.co.uk/emailers/social.png" width="247" alt="Get social with ITA" />
 									</td>		
 								</tr>		
 						</table>
 					</td>
 				</tr><!--END FOOTER SECTION-->
 
-
 				<tr><!--FOOTER LINKS-->
 					<td>
-						<table class="footer-links" style="font-size:12px;" cellpadding="10" cellspacing="0" width="100%" bgcolor="#231f20">
+						<table class="footer-links" style="font-size:12px;" cellpadding="10" cellspacing="0" width="100%" bgcolor="#0f1110">
 							<tr>
-								<td style="border-bottom:1px solid #868484; border-right:1px solid #ffd300;" class="col no-right-border" align="center">
-									<strong><a style="display:block;" href="#"><font color="#ffd300">UNSUBSCRIBE</font></a></strong>
+								<td style="border-bottom:1px solid #868484; border-right:1px solid #ffd300;" class="col no-right-border top-border-mobile" align="center">
+									<strong><a style="display:block;" href="*|UNSUB|*">UNSUBSCRIBE</a></strong>
 								</td>
 								<td style="border-bottom:1px solid #868484; border-right:1px solid #ffd300;" class="col no-right-border" align="center">
-									<strong><a style="display:block;" href="#"><font color="#ffd300">SEND TO A FRIEND</font></a></strong>
+									<strong><a style="display:block;" href="*|FORWARD|*">SEND TO A FRIEND</a></strong>
 								</td>
 								<td style="border-bottom:1px solid #868484; border-right:1px solid #ffd300;" class="col no-right-border" align="center">
-									<strong><a style="display:block;" href="#"><font color="#ffd300">VISIT YOUR WEBSITE</font></a></strong>
+									<strong><a style="display:block;" href="http://www.itavenues.co.uk/">VISIT OUR WEBSITE</a></strong>
 								</td>
 								<td class="col" align="center">
-									<strong><a style="display:block;" href="#"><font color="#ffd300">CONTACT US</font></a></strong>
+									<strong><a style="display:block;" href="http://www.itavenues.co.uk/make-an-enquiry/">CONTACT US</a></strong>
 								</td>
 							</tr>
 						</table>

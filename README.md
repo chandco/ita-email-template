@@ -7,6 +7,4 @@ various styles on the button itself.
 ***Bugs***
 ==========
 
-#07/04/2015
-
-We are at the stage of fixing the call to action buttons which are not rendering correctly on some email clients.
+All the text is being centred on outlook 2002/2003 email client.
